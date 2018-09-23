@@ -36,11 +36,18 @@ require_once("config.php");
 //echo $aluno;
 
 
+//Alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadbyId(31);
+//$usuario->update("professor", "!@#$%¨&*");
+//echo $usuario;
+
+
 $usuario = new Usuario();
 
 $usuario->loadbyId(31);
 
-$usuario->update("professor", "!@#$%¨&*");
+$usuario->delete();
 
 echo $usuario;
 
